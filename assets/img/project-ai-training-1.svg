@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t">
+  <title id="t">Illustration: AI training and data annotation — audio waveform with transcript tags and a side-by-side rubric evaluation of two AI outputs</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EAF6EF"/><stop offset="1" stop-color="#E6F2F5"/></linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#1F5E3B" flood-opacity=".16"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g fill="#7BC47F" opacity=".18"><circle cx="1450" cy="120" r="140"/><circle cx="120" cy="900" r="170"/></g>
+
+  <!-- audio panel -->
+  <g transform="translate(110 130)" filter="url(#sh)">
+    <rect width="820" height="460" rx="30" fill="#fff"/>
+    <g transform="translate(40 40)">
+      <circle cx="18" cy="18" r="18" fill="#2E8B57"/><path d="M12 9 l16 9 l-16 9z" fill="#fff"/>
+      <text x="56" y="27" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="26" font-weight="600" fill="#1F5E3B">audio_clip_0427.wav</text>
+      <text x="740" y="27" text-anchor="end" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="22" fill="#5B6B62">00:12.4</text>
+    </g>
+    <!-- waveform -->
+    <g transform="translate(40 180)" stroke-linecap="round" stroke-width="10">
+      <g stroke="#2E8B57">
+        <line x1="10" y1="-30" x2="10" y2="30"/><line x1="34" y1="-60" x2="34" y2="60"/><line x1="58" y1="-40" x2="58" y2="40"/><line x1="82" y1="-80" x2="82" y2="80"/><line x1="106" y1="-50" x2="106" y2="50"/><line x1="130" y1="-25" x2="130" y2="25"/><line x1="154" y1="-70" x2="154" y2="70"/><line x1="178" y1="-45" x2="178" y2="45"/><line x1="202" y1="-20" x2="202" y2="20"/>
+      </g>
+      <g stroke="#D4A537"><line x1="250" y1="-15" x2="250" y2="15"/><line x1="274" y1="-28" x2="274" y2="28"/><line x1="298" y1="-12" x2="298" y2="12"/></g>
+      <g stroke="#3C8DBC">
+        <line x1="346" y1="-55" x2="346" y2="55"/><line x1="370" y1="-85" x2="370" y2="85"/><line x1="394" y1="-60" x2="394" y2="60"/><line x1="418" y1="-35" x2="418" y2="35"/><line x1="442" y1="-75" x2="442" y2="75"/><line x1="466" y1="-50" x2="466" y2="50"/><line x1="490" y1="-30" x2="490" y2="30"/><line x1="514" y1="-65" x2="514" y2="65"/><line x1="538" y1="-40" x2="538" y2="40"/><line x1="562" y1="-20" x2="562" y2="20"/>
+      </g>
+      <g stroke="#7BC47F"><line x1="610" y1="-45" x2="610" y2="45"/><line x1="634" y1="-70" x2="634" y2="70"/><line x1="658" y1="-35" x2="658" y2="35"/><line x1="682" y1="-55" x2="682" y2="55"/><line x1="706" y1="-25" x2="706" y2="25"/></g>
+      <!-- segment boundaries -->
+      <g stroke="#1F5E3B" stroke-width="3" stroke-dasharray="8 8" opacity=".5"><line x1="226" y1="-110" x2="226" y2="110"/><line x1="322" y1="-110" x2="322" y2="110"/><line x1="586" y1="-110" x2="586" y2="110"/></g>
+    </g>
+    <!-- tags -->
+    <g font-family="Be Vietnam Pro, Arial, sans-serif" font-size="22" font-weight="600">
+      <g transform="translate(60 320)"><rect width="150" height="42" rx="21" fill="#EAF6EF"/><text x="75" y="28" text-anchor="middle" fill="#1F5E3B">Speaker 1</text></g>
+      <g transform="translate(270 320)"><rect width="110" height="42" rx="21" fill="#FBF3DF"/><text x="55" y="28" text-anchor="middle" fill="#8A6510">[uh]</text></g>
+      <g transform="translate(420 320)"><rect width="150" height="42" rx="21" fill="#E6F2F5"/><text x="75" y="28" text-anchor="middle" fill="#1F5E3B">Speaker 2</text></g>
+      <g transform="translate(610 320)"><rect width="150" height="42" rx="21" fill="#EAF6EF"/><text x="75" y="28" text-anchor="middle" fill="#2E8B57">&lt;laugh&gt;</text></g>
+    </g>
+    <!-- transcript lines -->
+    <g transform="translate(60 395)" fill="#D8E8DE"><rect width="520" height="14" rx="7"/><rect y="28" width="380" height="14" rx="7"/></g>
+  </g>
+
+  <!-- headphones -->
+  <g transform="translate(1140 300)" filter="url(#sh)">
+    <path d="M-150 60 a150 150 0 0 1 300 0" fill="none" stroke="#1F5E3B" stroke-width="30" stroke-linecap="round"/>
+    <rect x="-190" y="40" width="80" height="150" rx="34" fill="#2E8B57"/>
+    <rect x="110" y="40" width="80" height="150" rx="34" fill="#2E8B57"/>
+    <rect x="-172" y="70" width="44" height="90" rx="20" fill="#7BC47F"/>
+    <rect x="128" y="70" width="44" height="90" rx="20" fill="#7BC47F"/>
+  </g>
+
+  <!-- rubric A vs B -->
+  <g transform="translate(560 640)" filter="url(#sh)">
+    <rect width="930" height="290" rx="30" fill="#fff"/>
+    <g font-family="Be Vietnam Pro, Arial, sans-serif">
+      <text x="40" y="60" font-size="28" font-weight="700" fill="#1F5E3B">Rubric evaluation</text>
+      <g transform="translate(40 95)">
+        <rect width="400" height="160" rx="20" fill="#EAF6EF"/>
+        <text x="24" y="46" font-size="26" font-weight="700" fill="#1F5E3B">Output A</text>
+        <g transform="translate(24 70)" font-size="21" fill="#1B2A22">
+          <circle cx="12" cy="10" r="12" fill="#2E8B57"/><path d="M6 10 l5 5 l8 -9" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/><text x="34" y="17">Naturalness</text>
+          <circle cx="12" cy="52" r="12" fill="#2E8B57"/><path d="M6 52 l5 5 l8 -9" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/><text x="34" y="59">Pronunciation</text>
+        </g>
+      </g>
+      <g transform="translate(490 95)">
+        <rect width="400" height="160" rx="20" fill="#E6F2F5"/>
+        <text x="24" y="46" font-size="26" font-weight="700" fill="#1F5E3B">Output B</text>
+        <g transform="translate(24 70)" font-size="21" fill="#1B2A22">
+          <circle cx="12" cy="10" r="12" fill="#2E8B57"/><path d="M6 10 l5 5 l8 -9" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/><text x="34" y="17">Naturalness</text>
+          <circle cx="12" cy="52" r="12" fill="#C9572F"/><path d="M7 47 l10 10 M17 47 l-10 10" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/><text x="34" y="59">Pronunciation</text>
+        </g>
+      </g>
+      <g transform="translate(700 40)"><rect width="190" height="40" rx="20" fill="#FBF3DF"/><text x="95" y="27" text-anchor="middle" font-size="20" font-weight="700" fill="#8A6510">Preference: A</text></g>
+    </g>
+  </g>
+
+  <!-- quality badge -->
+  <g transform="translate(260 790)" filter="url(#sh)">
+    <circle r="105" fill="#1F5E3B"/>
+    <circle r="82" fill="none" stroke="#7BC47F" stroke-width="6" stroke-dasharray="10 10"/>
+    <text y="-6" text-anchor="middle" font-family="Lora, Georgia, serif" font-size="36" font-weight="700" fill="#fff">QA</text>
+    <text y="34" text-anchor="middle" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="20" fill="#D7EBDD">guidelines</text>
+  </g>
+</svg>
