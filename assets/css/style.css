@@ -330,6 +330,19 @@ button { font: inherit; cursor: pointer; }
   border: 1px solid rgba(255, 255, 255, .2); border-radius: 999px; padding: .5rem 1rem;
 }
 .to-top:hover { background: rgba(255, 255, 255, .2); }
+.footer-actions { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+.view-counter {
+  display: inline-flex; align-items: center; gap: .4rem; color: #C4DCCB;
+  border: 1px solid rgba(255, 255, 255, .14); border-radius: 999px; padding: .5rem 1rem;
+}
+.view-counter[hidden] { display: none; }
+.view-counter svg { width: 1em; height: 1em; }
+.view-counter strong { color: var(--white); font-variant-numeric: tabular-nums; }
+.view-counter.bump strong { animation: views-bump .6s ease; }
+.live-dot { width: 8px; height: 8px; border-radius: 50%; background: #5BD68A; box-shadow: 0 0 0 0 rgba(91, 214, 138, .6); animation: live-pulse 2s infinite; }
+@keyframes live-pulse { 70% { box-shadow: 0 0 0 7px rgba(91, 214, 138, 0); } 100% { box-shadow: 0 0 0 0 rgba(91, 214, 138, 0); } }
+@keyframes views-bump { 40% { color: #5BD68A; } }
+@media (prefers-reduced-motion: reduce) { .live-dot, .view-counter.bump strong { animation: none; } }
 
 /* ---------- 14. Page banner (list pages) ---------- */
 .page-banner {

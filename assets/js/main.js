@@ -112,6 +112,50 @@
     $$(".to-top").forEach((b) =>
       b.addEventListener("click", () => window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }))
     );
+    initViewCounter();
+  }
+
+  /* ---------- Live visit counter (free Abacus API, no account needed) ----------
+     Each browser session counts once (moving between pages does not add more).
+     Local previews (Live Server) only read the number, they never add to it. */
+  function initViewCounter() {
+    const box = $("[data-views]");
+    if (!box) return;
+    const API = "https://abacus.jasoncameron.dev";
+    const KEY = "ttminh1206-portfolio/visits";
+    const num = $("[data-views-num]", box);
+    const label = $("[data-views-label]", box);
+    const isLocal = location.protocol === "file:" || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+    let current = null;
+
+    const show = (v) => {
+      if (typeof v !== "number" || v < 0 || v === current) return;
+      const bumped = current !== null && v > current;
+      current = v;
+      num.textContent = v.toLocaleString("en-US");
+      label.textContent = v === 1 ? "view" : "views";
+      box.hidden = false;
+      if (bumped) { box.classList.remove("bump"); void box.offsetWidth; box.classList.add("bump"); }
+    };
+    const fetchValue = (action) =>
+      fetch(`${API}/${action}/${KEY}`).then((r) => r.json()).then((d) => show(d.value)).catch(() => {});
+
+    let counted = false;
+    try { counted = sessionStorage.getItem("views-counted") === "1"; } catch (e) {}
+    if (!isLocal && !counted) {
+      fetchValue("hit");
+      try { sessionStorage.setItem("views-counted", "1"); } catch (e) {}
+    } else {
+      fetchValue("get");
+    }
+
+    // Live updates: the number changes on screen as soon as someone else visits.
+    if ("EventSource" in window) {
+      const es = new EventSource(`${API}/stream/${KEY}`);
+      es.onmessage = (e) => { try { show(JSON.parse(e.data).value); } catch (err) {} };
+    } else {
+      setInterval(() => fetchValue("get"), 30000);
+    }
   }
 
   /* ---------- Reveal on scroll ---------- */
