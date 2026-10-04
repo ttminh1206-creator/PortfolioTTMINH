@@ -73,7 +73,7 @@ window.PORTFOLIO = {
     { group: "Analysis & Modelling", badge: "analysis",
       items: ["MCDA (AHP, SAW, GBWM)", "Composite index development", "GIS & remote sensing (ArcGIS, ENVI)", "Statistics (SPSS)", "Excel data analysis", "SWOT analysis"] },
     { group: "Communication & Coordination", badge: "comm",
-      items: ["Technical & academic writing (English)", "Regulatory & client reporting", "Presentations for government agencies", "Data visualisation & mapping", "Project planning & coordination", "Stakeholder liaison"] },
+      items: ["Technical & academic writing (English)", "Regulatory & client reporting", "Presentations for government agencies", "Data visualisation & mapping", "Project planning & coordination", "Tender & proposal preparation", "Stakeholder liaison"] },
     { group: "AI Training & Data Annotation", badge: "ai",
       items: ["Speech transcription (ASR)", "Transcript & timestamp QA", "Pairwise preference ranking", "Rubric-based evaluation of AI outputs"] }
   ],
@@ -167,7 +167,7 @@ window.PORTFOLIO = {
     { date: "2025 – Present", title: "Researcher", org: "Institute for Environment and Resources (IER), VNU-HCM", unit: "Center for Sustainable Development & Biodiversity",
       text: "Environmental research and consultancy for government-commissioned projects, coordinated remotely from Bangkok." },
     { date: "11/2021 – 2025", title: "Researcher", org: "Institute for Environment and Resources (IER), VNU-HCM", unit: "Department of Integrated Coastal Zone Management",
-      text: "Coastal risk, vulnerability and sustainability research; environmental monitoring, EIA and permitting work." },
+      text: "Coastal risk, vulnerability and sustainability research; environmental monitoring, EIA, permitting and bid preparation." },
     { date: "09/2026 – Present", title: "AI Training Contributor", org: "Outlier", unit: "Remote · part-time alongside the PhD",
       text: "Speech transcription, transcript verification and rubric-based evaluation of AI-generated outputs." }
   ],
@@ -259,6 +259,7 @@ window.PORTFOLIO = {
       summary: "Assessed surface water quality across 39 rivers and 17 lakes for a city-wide management plan to 2030. Coordinated delivery and the carrying-capacity and discharge-zoning analysis.",
       description: [
         "Ho Chi Minh City needed a plan to manage the quality of its rivers and lakes through 2030.",
+        "I prepared the bid for this assignment: the technical proposal (solution, methodology and work plan), the financial proposal (cost estimate and proposed contract value), and the capability profile, key-expert CVs, team organisation and relevant experience.",
         "I coordinated project delivery and the implementation framework, and took part in field surveys of water bodies and of point and non-point pollution sources.",
         "The team assessed pollution loads and environmental carrying capacity, then proposed discharge zoning, an emission-reduction roadmap and mitigation measures, delivered as technical reports and stakeholder presentations."
       ],
@@ -267,9 +268,10 @@ window.PORTFOLIO = {
         "Pollution load and environmental carrying capacity assessment of water bodies",
         "Discharge zoning, emission-reduction roadmap and pollution mitigation measures",
         "Field and laboratory data processed in Excel and checked against national technical regulations",
-        "Technical reports and presentations for government stakeholders"
+        "Technical reports and presentations for government stakeholders",
+        "Bid preparation: technical proposal (solution and methodology) and financial proposal"
       ],
-      tags: ["Water quality", "Carrying capacity", "Field survey", "Coordination"],
+      tags: ["Water quality", "Carrying capacity", "Field survey", "Coordination", "Bidding"],
       cover: "assets/img/project-water-quality-hcmc-1.jpg",
       gallery: gallery("project-water-quality-hcmc", [
         "Urban canal surveyed for surface water quality",
@@ -295,26 +297,29 @@ window.PORTFOLIO = {
       id: "compliance-eia",
       category: "project",
       type: "Compliance",
-      title: "EIA, Environmental Permitting & Technical Reporting",
+      title: "EIA, Permitting, Bidding & Technical Reporting",
       subtitle: "Regulatory work for government-commissioned projects",
       date: "2021 – Present",
       period: [2021, 2026],
       location: "Vietnam",
       role: "Field Surveyor & Report Author",
       organization: "Institute for Environment and Resources (IER), VNU-HCM",
-      summary: "Conducted EIA studies and prepared environmental permit documentation for government-commissioned projects. Presented technical findings to government agencies and clients.",
+      summary: "Conducted EIA studies, prepared environmental permit documentation and bid documents for government-commissioned projects. Presented technical findings to government agencies and clients.",
       description: [
         "Alongside research projects, my work at IER includes regulatory documentation for government-commissioned projects across Vietnam.",
         "I carry out field surveys and write EIA reports on water, air and general environmental conditions, and prepare wastewater discharge and other environmental permit applications.",
+        "I also take part in bidding: finding tenders that match the institute's capabilities, planning bid preparation, and preparing bid documents — capability profiles, key-expert CVs, team organisation and relevant experience, and above all the technical proposal (solution and methodology) and the financial proposal.",
         "I also review students' drafts and analyses, and present findings to government agencies as regulator-ready recommendations."
       ],
       highlights: [
         "EIA studies of water, air and environmental conditions, as field surveyor and report author",
         "Wastewater discharge permit applications and other environmental permit documents",
+        "Tender search and bid planning matched to the institute's capabilities",
+        "Bid documents: capability profile, key-expert CVs, technical proposal (solution & methodology) and financial proposal",
         "PowerPoint presentations for government agencies and clients",
         "Written review and corrections of undergraduate and graduate researchers' drafts"
       ],
-      tags: ["EIA", "Permitting", "Reporting"],
+      tags: ["EIA", "Permitting", "Bidding", "Reporting"],
       cover: "assets/img/project-compliance-eia-1.svg",
       gallery: [{ src: "assets/img/project-compliance-eia-1.svg", alt: "Illustration of an EIA report with water and air sampling" }],
       links: [],
@@ -413,6 +418,7 @@ window.PORTFOLIO = {
       summary: "Surveyed water, air, sediment, soil and aquatic ecology to design the province's 2021–2025 monitoring programme. Used multi-criteria analysis to site a 188-point network.",
       description: [
         "The province needed a monitoring programme for 2021–2025; IER delivered the final project report to DONRE Ba Ria–Vung Tau in July 2022.",
+        "I prepared the bid for this assignment, including the technical approach and methodology, the financial proposal, and supporting documents: capability profile, key-expert CVs, team organisation and relevant experience.",
         "I took part in field surveys and assessed water, air, sediment, soil and microbiological quality, as well as aquatic ecological status using biodiversity indices.",
         "Multi-criteria analysis was used to design a 188-point network, with a written justification for every siting decision, followed by recommendations for its long-term operation."
       ],
@@ -421,9 +427,10 @@ window.PORTFOLIO = {
         "Aquatic ecological status assessed with biodiversity indices; species data analysed in Excel",
         "Multi-criteria analysis to design a 188-point monitoring network",
         "Written justification recorded for every siting decision",
-        "Measures proposed for long-term operation and development of the network"
+        "Measures proposed for long-term operation and development of the network",
+        "Bid preparation: technical approach, methodology and financial proposal"
       ],
-      tags: ["Monitoring network", "Multi-criteria analysis", "Field survey", "Water & air quality"],
+      tags: ["Monitoring network", "Multi-criteria analysis", "Field survey", "Water & air quality", "Bidding"],
       cover: "assets/img/project-monitoring-brvt-1.jpg",
       gallery: gallery("project-monitoring-brvt", [
         "Water sample containers on a reservoir shore",
