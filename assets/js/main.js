@@ -123,13 +123,16 @@
     if (!box) return;
     const API = "https://abacus.jasoncameron.dev";
     const KEY = "ttminh1206-portfolio/visits";
+    const START = 700; // shown count starts from 700 (added to the real number of visits)
     const num = $("[data-views-num]", box);
     const label = $("[data-views-label]", box);
     const isLocal = location.protocol === "file:" || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
     let current = null;
 
     const show = (v) => {
-      if (typeof v !== "number" || v < 0 || v === current) return;
+      if (typeof v !== "number" || v < 0) return;
+      v += START;
+      if (v === current) return;
       const bumped = current !== null && v > current;
       current = v;
       num.textContent = v.toLocaleString("en-US");
