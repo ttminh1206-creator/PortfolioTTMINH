@@ -195,7 +195,7 @@ window.PORTFOLIO = {
      link: DOI URL, or a local PDF (set linkType: "pdf")
      --------------------------------------------------------------------- */
   publications: [
-    { year: 2026, authors: "Tran, L.T.D., **Tran, M.T.**, Le, C.T., Nguyen, M.L.", title: "Developing a composite sustainability index within an Integrated Coastal Zone Management framework: A case study of Ho Chi Minh City, Vietnam", venue: "Applied Environmental Research", details: "In press", type: "International journal", link: "" },
+    { year: 2027, authors: "**Tran, M.T.**, Tran, L.T.D., Nguyen, M.L., Le, C.T.", title: "Development of a Composite Sustainability Index within an Integrated Coastal Zone Management Framework: A Case Study of Ho Chi Minh City, Vietnam", venue: "Applied Environmental Research", details: "49(1), 002", type: "International journal", link: "https://doi.org/10.35762/AER.2027002" },
     { year: 2026, authors: "Tran, L.T.D., **Tran, M.T.**, Le, C.T., Nguyen, M.L.", title: "Environmental vulnerability assessment of the coastal region of Ba Ria–Vung Tau province, Vietnam: An integrated geospatial approach", venue: "Journal of Sustainability Science and Management", details: "In press", type: "International journal", link: "" },
     { year: 2025, authors: "**Tran, M.T.**, Tran, L.T.D., Do, D.S., Tran, D.A., Le, C.T.", title: "Environmental Vulnerability Assessment in Coastal Areas with Intensive Tourism Activities: A Case Study in Ba Ria–Vung Tau Province, Vietnam", venue: "International Journal of Environmental Science and Development", details: "16(5), 353–363 · Scopus Q4", type: "International journal", link: "https://doi.org/10.18178/ijesd.2025.16.5.1544" },
     { year: 2024, authors: "Tran, L.T.D., Le, C.T., **Tran, M.T.**", title: "Coastal Sustainability Analysis Using an Integrated Coastal Zone Management Approach for the Coastal Region of Ba Ria–Vung Tau Province, Vietnam", venue: "EnvironmentAsia", details: "17(2), 50–63 · Scopus Q4", type: "International journal", link: "https://doi.org/10.14456/ea.2024.20" },
@@ -459,39 +459,41 @@ window.PORTFOLIO = {
       category: "research",
       type: "Research project",
       title: "Composite Sustainability Index for Coastal Development (ICZM Approach)",
-      subtitle: "Coastal zone of Ho Chi Minh City (formerly Ba Ria–Vung Tau)",
-      date: "2024 – 2025",
-      period: [2024, 2025],
+      subtitle: "Coastal zone of Ho Chi Minh City (formerly Ba Ria–Vung Tau) · Project C2025-24-04",
+      date: "2025 – 2026",
+      period: [2025, 2026],
       location: "Ho Chi Minh City, Vietnam",
       role: "Principal Investigator",
-      organization: "Funded by VNU-HCM",
-      summary: "Led a VNU-HCM funded study building a composite coastal sustainability index on an ICZM approach. Mapped sustainability across 23 coastal sub-regions with GIS and remote sensing.",
+      organization: "Funded by VNU-HCM (C2025-24-04)",
+      summary: "Led a VNU-HCM funded study that built a 20-criterion coastal sustainability index on an ICZM framework and mapped 14 coastal communes with GBWM, GIS and remote sensing. Published as first author in Applied Environmental Research (2027).",
       description: [
-        "Rapid coastal development makes it hard to balance economic growth with environmental protection.",
-        "As principal investigator, I led study planning, the literature review and the assessment framework, building an index from economic, social, environmental and management sub-indices.",
-        "A related study (EnvironmentAsia, 2024) classed the 23 sub-regions into four sustainability levels, and the project proposed zoning and management solutions for the weaker areas."
+        "The coast of Ho Chi Minh City faces rapid urbanisation, mangrove loss, erosion and sea-level rise, yet sustainability is usually assessed one sector at a time.",
+        "As principal investigator, I led the project from proposal to final report. We built a 2019–2025 coastal dataset and designed an index of 20 criteria in three dimensions (7 socio-economic, 8 eco-environmental, 5 institutional-management), structured on ICZM principles. A panel of 12 experts selected the criteria and weighted them with the Group Best–Worst Method (GBWM) over two consultation rounds.",
+        "Spatial criteria came from satellite imagery: inundation from Sentinel-1 radar, shoreline materials from Sentinel-2, shoreline change 2015–2025 from Landsat 8/9 and forest cover from Landsat 9, each validated against 400 field and Google Earth samples (Kappa 0.87–0.95). A survey of 104 managers, businesses and households scored the communication criterion.",
+        "The index ranged from 0.378 to 0.630 across 14 coastal communes. Low scores were linked to mangrove loss, shoreline retreat and limited management capacity, and the eco-environmental dimension carried the largest weight (49%). Combining the results with a SWOT analysis, we proposed three groups of solutions: policy and management, research and technology transfer, and community communication."
       ],
       highlights: [
-        "Led study planning, literature review and framework development",
-        "Composite index built from economic, social, environmental and management sub-indices",
-        "GIS and remote sensing maps across 23 coastal sub-regions",
-        "Sustainable development zoning and management solutions proposed",
-        "Results: EnvironmentAsia (2024); Applied Environmental Research (2026, in press)"
+        "Principal investigator, from proposal to final report",
+        "20 criteria in 3 ICZM dimensions, weighted by a 12-expert panel (GBWM)",
+        "Sentinel-1/2 and Landsat 8/9 criteria, validated with 400 samples each (Kappa 0.87–0.95)",
+        "Sociological survey of 104 respondents",
+        "Sustainability maps for 14 coastal communes; priority areas identified",
+        "First-author article: Applied Environmental Research (2027)"
       ],
-      tags: ["ICZM", "Composite index", "GIS", "Sustainability"],
+      tags: ["ICZM", "Composite index", "GBWM", "GIS", "Remote sensing", "Sustainability"],
       cover: "assets/img/research-sustainability-index-iczm-1.jpg",
       gallery: gallery("research-sustainability-index-iczm", [
-        "Layered GIS model combining economic, social, environmental and management data into the sustainability index",
-        "Research flow from goals to sustainability mapping",
-        "Study area with 23 coastal sub-regions",
-        "Map of overall coastal sustainability levels",
-        "Map of the economic sub-index",
-        "Map of the social sub-index",
-        "Map of the environmental sub-index",
-        "Map of the management sub-index"
+        "Coastal sustainability index map for the 14 coastal communes of Ho Chi Minh City (AER 2027, Fig. 7)",
+        "Methodology framework: ICZM criteria, GBWM weighting, data processing and spatial zoning (AER 2027, Fig. 2)",
+        "Study area: coastal communes of Ho Chi Minh City (AER 2027, Fig. 1)",
+        "Socio-economic, eco-environmental and institutional-management index maps (AER 2027, Fig. 4)",
+        "Optimal criteria weights and deviation ranges from GBWM (AER 2027, Fig. 3)",
+        "Contribution of each component index to the sustainability index by commune (AER 2027, Fig. 6)",
+        "Shoreline change rates 2015–2025 from Landsat imagery",
+        "Environmental-protection message board on the coast of Binh Chau (field survey)"
       ]),
       links: [
-        { label: "EnvironmentAsia (2024) — DOI", url: "https://doi.org/10.14456/ea.2024.20", icon: "file-text" }
+        { label: "Applied Environmental Research (2027) — DOI", url: "https://doi.org/10.35762/AER.2027002", icon: "file-text" }
       ],
       featured: true
     },
