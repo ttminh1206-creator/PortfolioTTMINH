@@ -1,0 +1,54 @@
+/* =========================================================================
+   hero-3d.css — styles for the 3D hero (assets/js/hero-3d.js)
+   Everything is scoped to .hero.has-3d, which hero-3d.js adds only when
+   WebGL works; otherwise the original SVG scene stays exactly as it is.
+   ========================================================================= */
+.hero3d-canvas {
+  position: absolute; inset: 0; width: 100%; height: 100%; display: block; z-index: 0;
+  touch-action: pan-y; opacity: 0; transition: opacity 1s ease; -webkit-tap-highlight-color: transparent;
+}
+.hero3d-canvas.is-ready { opacity: 1; }
+
+.hero.has-3d { isolation: isolate; } /* keep the z-index below inside the hero (stats card must stay on top) */
+.hero.has-3d .hero-grid { z-index: 2; pointer-events: none; }
+.hero.has-3d .hero-grid > :first-child { pointer-events: auto; }
+.hero.has-3d .scene { aspect-ratio: 560 / 520; pointer-events: none; }
+.hero.has-3d .scene svg,
+.hero.has-3d .hero-deco.leaf-1,
+.hero.has-3d .hero-deco.leaf-2 { display: none; }
+.hero.has-3d .hero-deco.waves { z-index: 3; }
+
+/* Floating labels pinned to 3D objects */
+.hero3d-label {
+  position: absolute; left: 0; top: 0; z-index: 1; pointer-events: none; white-space: nowrap;
+  padding: .3rem .75rem; border-radius: 999px; font-size: .78rem; font-weight: 700; letter-spacing: .01em;
+  box-shadow: 0 8px 20px rgba(31, 94, 59, .16); opacity: 0; transition: opacity .6s ease;
+}
+.hero3d-label::after {
+  content: ""; position: absolute; left: 50%; top: 100%; width: 1.5px; height: var(--stem, 14px);
+  background: var(--forest); opacity: .45; transform: translateX(-50%);
+}
+.hero3d-label.show { opacity: 1; }
+.hero3d-label.is-dark { background: var(--forest); color: var(--white); }
+.hero3d-label.is-light { background: var(--white); color: var(--forest); border: 1.5px solid var(--gold); }
+.hero3d-label.is-risk { background: #C8463F; color: var(--white); }
+.hero3d-label.is-risk::after { background: #C8463F; opacity: .7; }
+
+/* Sea-level rise scenario control (under the scene) */
+.hero3d-slr {
+  position: absolute; left: 0; top: 0; z-index: 4; transform: translateX(-50%); /* above the hero's bottom wave */
+  width: min(300px, calc(100vw - 32px)); padding: .6rem .9rem .5rem; border-radius: 16px;
+  font-size: .78rem; color: var(--forest); text-align: left;
+  background: rgba(255, 255, 255, .88); border: 1px solid var(--line); box-shadow: var(--shadow);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+}
+.hero3d-slr-row { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; font-weight: 700; }
+.hero3d-slr-year { font-family: var(--font-head); font-size: 1.1rem; color: #C8463F; font-variant-numeric: tabular-nums; }
+.hero3d-slr input[type="range"] { display: block; width: 100%; margin: .35rem 0 .15rem; accent-color: #C8463F; cursor: pointer; }
+.hero3d-slr-scale { display: flex; justify-content: space-between; color: var(--muted); font-size: .7rem; }
+.hero3d-slr-hint {
+  display: flex; align-items: center; justify-content: center; gap: .35rem;
+  margin-top: .4rem; padding-top: .4rem; border-top: 1px dashed var(--line); font-weight: 600;
+}
+.hero3d-slr-hint svg { width: 14px; height: 14px; flex-shrink: 0; }
+.hero3d-slr.interacted .hero3d-slr-hint { display: none; }
